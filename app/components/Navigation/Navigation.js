@@ -12,6 +12,7 @@ import SeriesNavigation from './SeriesNavigation';
 import ActivityNavigation from './ActivityNavigation';
 import ConfigureApp from '../InitialSetup/ConfigureApp';
 import ModalWrapper from '../Modal/ModalWrapper';
+import NotificationWrapper from '../Widgets/NotificationWrapper';
 
 const styles = StyleSheet.create({
   selectedTab: {
@@ -85,6 +86,7 @@ class Navigation extends Component {
     return (
       <View style={{flex: 1}}>
         <ModalWrapper />
+        <NotificationWrapper />
         <TabNavigator>
           <TabNavigator.Item
             selected={this.state.selectedTab === 'series'}
